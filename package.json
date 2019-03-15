@@ -1,0 +1,33 @@
+{
+  "name": "openbook-docs",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.0.0-beta.2",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.14.10"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
+  },
+  "scripts": {
+    "dev": "vuepress dev source",
+    "build": "vuepress build source",
+    "lint": "eslint source/.vuepress/theme --ext .js --ext .vue",
+    "lint:fix": "npm run lint -- --fix",
+    "deploy": "git subtree push --prefix source/.vuepress/dist origin gh-pages"
+  },
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "twemoji": "^11.3.0"
+  }
+}

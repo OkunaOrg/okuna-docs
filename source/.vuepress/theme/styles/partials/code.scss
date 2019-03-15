@@ -1,0 +1,164 @@
+@import '../colors';
+
+.content {
+  code {
+    color: lighten($text-color, 20%);
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    font-size: 0.85em;
+    background-color: rgba(27, 30, 35, 0.05);
+    border-radius: 3px;
+  }
+
+  pre, pre[class*="language-"] {
+    line-height: 1.4;
+    padding: 1.25rem 1.5rem;
+    margin: 0.85rem 0;
+    background-color: $code-background;
+    border-radius: 6px;
+    overflow: auto;
+
+    code {
+      color: #fff;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
+}
+
+div[class*="language-"] {
+  position: relative;
+  background-color: $code-background;
+  border-radius: 6px;
+
+  .highlight-lines {
+    user-select: none;
+    padding-top: 1.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.4;
+
+    .highlighted {
+      background-color: rgba(0, 0, 0, 66%);
+    }
+  }
+
+  pre, pre[class*="language-"] {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 3;
+    top: 0.8em;
+    right: 1em;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:not(.line-numbers-mode) {
+    .line-numbers-wrapper {
+      display: none;
+    }
+  }
+
+  &.line-numbers-mode {
+    .highlight-lines .highlighted {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 0;
+        display: block;
+        width: $line-numbers-wrapper-width;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 66%);
+      }
+    }
+
+    pre {
+      padding-left: $line-numbers-wrapper-width + 1rem;
+      vertical-align: middle;
+    }
+
+    .line-numbers-wrapper {
+      position: absolute;
+      top: 0;
+      width: $line-numbers-wrapper-width;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.3);
+      padding: 1.25rem 0;
+      line-height: 1.4;
+
+      br {
+        user-select: none;
+      }
+
+      .line-number {
+        position: relative;
+        z-index: 4;
+        user-select: none;
+        font-size: 0.85em;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: $line-numbers-wrapper-width;
+      height: 100%;
+      border-radius: 6px 0 0 6px;
+      border-right: 1px solid rgba(0, 0, 0, 66%);
+      background: $code-background;
+    }
+  }
+}
+
+$languages: js ts html md vue css sass scss less stylus go java c sh json yaml py;
+
+@each $lang in $languages {
+  div.language-#{$lang} {
+    &::before {
+      content: '#{$lang}';
+    }
+  }
+}
+
+.language-javascript::before {
+  content: 'js';
+}
+
+.language-typescript::before {
+  content: 'ts';
+}
+
+.language-markup::before {
+  content: 'html';
+}
+
+.language-markdown::before {
+  content: 'md';
+}
+
+.language-ruby::before {
+  content: 'rb';
+}
+
+.language-python::before {
+  content: 'py';
+}
+
+.language-bash::before {
+  content: 'sh';
+}

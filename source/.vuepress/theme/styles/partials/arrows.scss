@@ -1,0 +1,34 @@
+@import '../colors';
+
+$border-properties-1: 4px solid transparent;
+$border-properties-2: 6px solid $arrow-background;
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  &.up {
+    border-left: $border-properties-1;
+    border-right: $border-properties-1;
+    border-bottom: $border-properties-2;
+  }
+
+  &.down {
+    border-left: $border-properties-1;
+    border-right: $border-properties-1;
+    border-top: $border-properties-2;
+  }
+
+  &.right {
+    border-top: $border-properties-1;
+    border-bottom: $border-properties-1;
+    border-left: $border-properties-2;
+  }
+
+  &.left {
+    border-top: $border-properties-1;
+    border-bottom: $border-properties-1;
+    border-right: $border-properties-2;
+  }
+}

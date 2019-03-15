@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "standard",
+    "plugin:vue/base",
+    "plugin:vue/essential",
+    "plugin:vue/strongly-recommended",
+    "plugin:vue/recommended"
+  ],
+  "rules": {
+    "no-return-assign": "off",
+    "semi": ["error", "always"],
+    "no-unused-expressions": "off",
+    "vue/name-property-casing": ["error", "kebab-case"]
+  },
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 2017
+  }
+}

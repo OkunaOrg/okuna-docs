@@ -1,0 +1,15 @@
+@import '../variables';
+
+%wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+
+  @media ( max-width: $mq-narrow ) {
+    padding: 2rem;
+  }
+
+  @media ( max-width: $mq-mobile-narrow ) {
+    padding: 1.5rem;
+  }
+}

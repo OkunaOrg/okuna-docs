@@ -1,0 +1,58 @@
+@import './colors';
+@import './variables';
+
+$mobile-sidebar-width: $sidebar-width * 0.82;
+
+// narrow desktop / iPad
+@media ( max-width: $mq-narrow ) {
+  .sidebar {
+    font-size: 15px;
+    width: $mobile-sidebar-width
+  }
+
+  .page {
+    padding-left: $mobile-sidebar-width;
+  }
+}
+
+// wide mobile
+@media ( max-width: $mq-mobile ) {
+  .sidebar {
+    top: 0;
+    padding-top: $navbar-height;
+    transform: translateX(-100%);
+    transition: transform .2s ease;
+  }
+
+  .page {
+    padding-left: 0;
+  }
+
+  .theme-container {
+    &.sidebar-open {
+      .sidebar {
+        transform: translateX(0);
+      }
+    }
+
+    &.no-navbar {
+      .sidebar {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+// narrow mobile
+@media ( max-width: $mq-mobile-narrow ) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .content {
+    div[class*="language-"] {
+      margin: 0.85rem -1.5rem;
+      border-radius: 0;
+    }
+  }
+}

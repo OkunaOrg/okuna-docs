@@ -1,0 +1,53 @@
+@import '../colors';
+
+$tip-bg: #f3f5f7;
+$tip-border: #42b983;
+$warning: #ffe564;
+$danger: #ffe6e6;
+
+.custom-block {
+  .custom-block-title {
+    font-weight: 600;
+    margin-bottom: -0.4rem;
+  }
+
+  &.tip, &.warning, &.danger {
+    padding: .1rem 1.5rem;
+    border-left-width: .5rem;
+    border-left-style: solid;
+    margin: 1rem 0;
+  }
+
+  &.tip {
+    background: #f3f5f7;
+    border-color: #42b983;
+  }
+
+  &.warning {
+    background-color: rgba(255, 230, 100, .3);
+    border-color: darken($warning, 35%);
+    color: darken($warning, 70%);
+
+    .custom-block-title {
+      color: darken($warning, 50%);
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+
+  &.danger {
+    background-color: $danger;
+    border-color: darken(red, 20%);
+    color: darken(red, 70%);
+
+    .custom-block-title {
+      color: darken(red, 40%);
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+}
