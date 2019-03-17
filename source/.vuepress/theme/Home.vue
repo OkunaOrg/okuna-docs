@@ -18,7 +18,7 @@
       )
         h2 {{ feature.title }}
         p {{ feature.details }}
-    
+
     Content(custom=true)
 
     .footer(v-if='data.footer')
