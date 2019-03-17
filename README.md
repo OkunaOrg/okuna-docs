@@ -1,6 +1,6 @@
 <img alt="Open book logo" src="https://snag.gy/yWbLr1.jpg" width="200">
 
-This repository contains the source for the Openbook API documentation page - https://docs.openbook.social.
+This repository contains the source for the Openbook documentation page - https://docs.openbook.social.
 
 ## Table of Contents
 
