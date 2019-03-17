@@ -248,6 +248,21 @@ table {
   }
 }
 
+.article-button {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: $accent;
+  padding: 0.2rem 2rem;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: .2s background-color linear;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+}
+
 @media ( min-width: ($mq-mobile + 1px) ) {
   .theme-container.no-sidebar {
     .sidebar {

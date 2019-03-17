@@ -7,19 +7,18 @@ footer: © Openbook
 
 <div class="boxes">
   <div class="box">
-    <h2>Privacy-friendly</h2>
-    <p>Surf with peace-of-mind. We're firm believers privacy is a fundamental human right. We don't track nor monitor your activity.</p>
+    <h2>API Setup</h2>
+    <p>Learn how to set up your own instance of Openbook's Django API backend.</p>
+    <router-link to="/api-setup.html" class="article-button">More info</router-link>
   </div>
   <div class="box">
-    <h2>Personal</h2>
-    <p>With social circles, lists, custom reactions and themes, make <strong>Open</strong>book your own personal network!</p>
+    <h2>App Setup</h2>
+    <p>Learn how to set up the environment for building a local version of the Openbook Flutter app.</p>
+    <router-link to="/app-setup.html" class="article-button">More info</router-link>
   </div>
   <div class="box">
-    <h2>100% Ad-free revenue model</h2>
-    <p>Our revenue model is an optional subscription called <strong>Open</strong>book Gold offering access to more reactions, themes and customization options.</p>
+    <h2>Questions?</h2>
+    <p>We're happy to help you solve any issues that you might run into! All you have to do is join our Slack!</p>
+    <a href="https://join.slack.com/t/openbookorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY" target="_blank" class="article-button">Join</a>
   </div>
 </div>
-
-# Openbook Documentation
-
-Welcome to the Openbook Documentation page! At the moment, this website is still in development. Please, check back later!

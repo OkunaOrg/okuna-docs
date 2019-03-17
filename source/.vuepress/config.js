@@ -2,6 +2,7 @@
 
 module.exports = {
   locales: {
+    // Locale settings, key must be the locale path (e.g.: '/es/')
     '/': {
       lang: 'en-US',
       title: 'Openbook Docs',
@@ -9,6 +10,7 @@ module.exports = {
     }
   },
   themeConfig: {
+    // Custom theme strings per-locale
     locales: {
       '/': {
         shortTitle: 'Docs',
@@ -18,13 +20,27 @@ module.exports = {
         privacyPolicyLabel: 'Privacy Policy',
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'API Setup', link: '/api-setup.html' },
+          { text: 'Flutter Setup', link: '/app-setup.html' },
           { text: 'API Docs', link: 'https://documenter.getpostman.com/view/5571027/RztoLo4T' },
           { text: 'About us', link: 'https://www.openbook.social/en/about-us' },
           { text: 'Contact us', link: 'https://www.openbook.social/en/contact-us' }
         ]
       }
     },
-    sidebar: 'auto',
+    sidebar: {
+      // Sidebar configuration per-locale
+      '/': [
+        {
+          title: 'Openbook Documentation',
+          collapsable: false,
+          children: [
+            'api-setup',
+            'app-setup'
+          ]
+        }
+      ]
+    },
     displayAllHeaders: true
   }
 };

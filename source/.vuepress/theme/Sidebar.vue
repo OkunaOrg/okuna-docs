@@ -10,7 +10,7 @@
           :first='idx === 0'
           :open='idx === openGroupIndex'
           :collapsable='item.collapsable || item.collapsible'
-          @toggle='toggleGroup(i)'
+          @toggle='toggleGroup(idx)'
         )
         SidebarLink(v-else=true, :item='item')
     slot(name='bottom')
