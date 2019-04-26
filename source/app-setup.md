@@ -54,7 +54,8 @@ If you're using git in your command line, you can download the handy tool [gitmo
 
 ### 1. Install the `openbook-api` backend.
 
-Follow the [instructions here](https://github.com/OpenbookOrg/openbook-api#getting-started) and make sure the server is running.
+Follow the [instructions here](/api-setup.html#getting-started) and make 
+sure the server is running.
 
 ### 2. Install Flutter
 
