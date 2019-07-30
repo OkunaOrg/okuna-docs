@@ -1,14 +1,14 @@
-# Openbook Flutter App Setup
+# Okuna Flutter App Setup
 
 ## Project overview
 
 The project is a [Flutter](https://www.djangoproject.com/start/) application.
  
-It's dependent on the [openbook-api](https://github.com/OpenbookOrg/openbook-api) backend.
+It's dependent on the [okuna-api](https://github.com/OkunaOrg/okuna-api) backend.
 
 ## Requirements
 
-* [openbook-api](https://github.com/OpenbookOrg/openbook-api)
+* [okuna-api](https://github.com/OkunaOrg/okuna-api)
 * [Flutter](https://flutter.io/get-started/install/)
 
 ## Contributing
@@ -25,22 +25,22 @@ Examples of contributions we love include:
 
 #### Code of Conduct
 
-Please read and follow our [Code of Conduct](https://github.com/OpenBookOrg/openbook-app/blob/master/CODE_OF_CONDUCT.md).
+Please read and follow our [Code of Conduct](https://github.com/OkunaOrg/okuna-app/blob/master/CODE_OF_CONDUCT.md).
 
 #### License
 
 Every contribution accepted is licensed under [AGPL v3.0](http://www.gnu.org/licenses/agpl-3.0.html) or any later version. 
 You must be careful to not include any code that can not be licensed under this license.
 
-Please read carefully [our license](https://github.com/OpenBookOrg/openbook-app/blob/master/LICENSE.txt) and ask us if you have any questions.
+Please read carefully [our license](https://github.com/OkunaOrg/okuna-app/blob/master/LICENSE.txt) and ask us if you have any questions.
 
 #### Responsible disclosure
 
-Cyber-hero? Check out our [Vulnerability Disclosure page](https://www.open-book.org/en/vulnerability-report).
+Cyber-hero? Check out our [Vulnerability Disclosure page](https://www.okuna.io/en/vulnerability-report).
 
 #### Other issues
 
-We're available almost 24/7 in the Openbook slack channel. [Join us!](https://join.slack.com/t/openbookorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY)
+We're available almost 24/7 in the Okuna slack channel. [Join us!](https://join.slack.com/t/okunaorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY)
 
 #### Git commit message conventions
 
@@ -52,7 +52,7 @@ If you're using git in your command line, you can download the handy tool [gitmo
 
 ## Getting started
 
-### 1. Install the `openbook-api` backend.
+### 1. Install the `okuna-api` backend.
 
 Follow the [instructions here](/api-setup.html#getting-started) and make 
 sure the server is running.
@@ -70,8 +70,8 @@ flutter doctor
 ### 3. Clone the repository
 
 ```sh
-git clone git@github.com:OpenbookOrg/openbook-app.git
-cd openbook-app
+git clone git@github.com:OkunaOrg/okuna-app.git
+cd okuna-app
 ```
 
 ### 4. Create the `env.json` file
@@ -88,7 +88,7 @@ Edit the `.env.json` file  with your environment settings.
 
 ````json
 {
-   "API_URL": "<MANDATORY: The url of the openbook-api backend>",
+   "API_URL": "<MANDATORY: The url of the okuna-api backend>",
    "MAGIC_HEADER_NAME" : "<OPTIONAL: The name of a header to append on every request used for access-control.",
    "MAGIC_HEADER_VALUE" : "<OPTIONAL: The value of the header to append on every request used for access-control.>"
 }
@@ -178,7 +178,7 @@ flutter run --profile
 
 ### 8. Contribute! 
 
-Help us keep Openbook going! Please look into our open issues. All contribution, no matter how small, makes a big difference.
+Help us keep Okuna going! Please look into our open issues. All contribution, no matter how small, makes a big difference.
 
 ## Official work-arounds list
 
@@ -201,12 +201,12 @@ The original issue for the build error is [this one](https://github.com/OneSigna
 
 ## Questions/stuck?
 
-[Join our Slack channel](https://join.slack.com/t/openbookorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY), we're happy to help you troubleshoot your issue.
+[Join our Slack channel](https://join.slack.com/t/okunaorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY), we're happy to help you troubleshoot your issue.
 
 
 ## Glossary
 
-Have a term we use you would like an explanation for? [Let us know by opening an issue](https://github.com/OpenbookOrg/openbook-api/issues)!
+Have a term we use you would like an explanation for? [Let us know by opening an issue](https://github.com/OkunaOrg/okuna-api/issues)!
 
 #### Circle
 

@@ -1,6 +1,6 @@
-<img alt="Open book logo" src="https://snag.gy/yWbLr1.jpg" width="200">
+<img alt="Okuna logo" src="https://i.snag.gy/FAgp8K.jpg" width="200">
 
-This repository contains the source for the Openbook documentation page - https://docs.openbook.social.
+This repository contains the source for the Okuna documentation page - https://docs.okuna.io.
 
 ## Table of Contents
 
@@ -41,22 +41,22 @@ Examples of contributions we love include:
 
 #### Code of Conduct
 
-Please read and follow our [Code of Conduct](https://github.com/OpenBookOrg/openbook-docs/blob/master/CODE_OF_CONDUCT.md).
+Please read and follow our [Code of Conduct](https://github.com/OkunaOrg/okuna-docs/blob/master/CODE_OF_CONDUCT.md).
 
 #### License
 
 Every contribution accepted is licensed under [AGPL v3.0](http://www.gnu.org/licenses/agpl-3.0.html) or any later version. 
 You must be careful to not include any code that can not be licensed under this license.
 
-Please read carefully [our license](https://github.com/OpenBookOrg/openbook-docs/blob/master/LICENSE.txt) and ask us if you have any questions.
+Please read carefully [our license](https://github.com/OkunaOrg/okuna-docs/blob/master/LICENSE.txt) and ask us if you have any questions.
 
 #### Responsible disclosure
 
-Cyber-hero? Check out our [Vulnerability Disclosure page](https://www.open-book.org/en/vulnerability-report).
+Cyber-hero? Check out our [Vulnerability Disclosure page](https://www.okuna.io/en/vulnerability-report).
 
 #### Other issues
 
-We're available almost 24/7 in the Openbook slack channel. [Join us!](https://join.slack.com/t/openbookorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY)
+We're available almost 24/7 in the Okuna Slack channel. [Join us!](https://join.slack.com/t/okunaorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY)
 
 #### Git commit message conventions
 
@@ -71,8 +71,8 @@ If you're using git in your command line, you can download the handy tool [gitmo
 Clone the repository:
 
 ```sh
-git clone git@github.com:openbookorg/openbook-docs.git
-cd openbook-docs
+git clone git@github.com:OkunaOrg/okuna-docs.git
+cd okuna-docs
 ```
 
 Install the dependencies using Yarn:
@@ -130,4 +130,4 @@ git subtree push --prefix source/.vuepress/dist origin gh-pages
 
 ## Questions/stuck?
 
-[Join our Slack channel](https://join.slack.com/t/openbookorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY), we're happy to help you troubleshoot your issue.
+[Join our Slack channel](https://join.slack.com/t/okunaorg/shared_invite/enQtNDI2NjI3MDM0MzA2LTYwM2E1Y2NhYWRmNTMzZjFhYWZlYmM2YTQ0MWEwYjYyMzcxMGI0MTFhNTIwYjU2ZDI1YjllYzlhOWZjZDc4ZWY), we're happy to help you troubleshoot your issue.

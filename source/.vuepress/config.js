@@ -5,8 +5,8 @@ module.exports = {
     // Locale settings, key must be the locale path (e.g.: '/es/')
     '/': {
       lang: 'en-US',
-      title: 'Openbook Docs',
-      description: 'The official documentation for Openbook.'
+      title: 'Okuna Docs',
+      description: 'The official documentation for Okuna.'
     }
   },
   themeConfig: {
@@ -22,9 +22,9 @@ module.exports = {
           { text: 'Home', link: '/' },
           { text: 'API Setup', link: '/api-setup.html' },
           { text: 'Flutter Setup', link: '/app-setup.html' },
-          { text: 'API Docs', link: 'https://documenter.getpostman.com/view/5571027/RztoLo4T' },
-          { text: 'About us', link: 'https://www.openbook.social/en/about-us' },
-          { text: 'Contact us', link: 'https://www.openbook.social/en/contact-us' }
+          { text: 'API Docs', link: 'https://documenter.getpostman.com/view/5571027/S1EQSxso?version=latest' },
+          { text: 'About us', link: 'https://www.okuna.io/en/about-us' },
+          { text: 'Contact us', link: 'https://www.okuna.io/en/contact-us' }
         ]
       }
     },
@@ -32,7 +32,7 @@ module.exports = {
       // Sidebar configuration per-locale
       '/': [
         {
-          title: 'Openbook Documentation',
+          title: 'Okuna Documentation',
           collapsable: false,
           children: [
             'api-setup',

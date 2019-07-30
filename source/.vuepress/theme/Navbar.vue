@@ -8,8 +8,7 @@
         ref='siteName'
         :class='{ "can-hide": $site.themeConfig.logo }'
       )
-        strong Open
-        | book
+        strong Okuna
         span.site-name-inner {{ shortTitle }}
 
     .links(:style='{ "max-width": linksWrapMaxWidth + "px" }')

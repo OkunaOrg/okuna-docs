@@ -6,8 +6,8 @@
         :src='$withBase(data.heroImage)'
         alt='hero'
       )
-      h1 {{ data.heroText || $title || 'Openbook Docs' }}
-      p.description {{ data.tagline || $description || 'Welcome to the Openbook Documentation site.' }}
+      h1 {{ data.heroText || $title || 'Okuna Docs' }}
+      p.description {{ data.tagline || $description || 'Welcome to the Okuna Documentation site.' }}
       p.action(v-if='data.actionText && data.actionLink')
         NavLink.action-button.is-rainbow(:item='actionLink')
 
